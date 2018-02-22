@@ -4,11 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gravit System</title>
+    <title>Gravit</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/gravit-icon.png" />
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/materialize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css" />
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="assets/js/materialize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/scrolloverflow.js"></script>
 </head>
 <body>
-    <img src="./assets/img/logo.svg" alt="" width="400">
+
+    <div id="fullpage" class="white-text">
+        <div class="section">
+            <div class="content row container">
+                <div class="col s7 push-s5">
+                    <h3>GRAVIT SYSTEM</h3>
+                    <p>For Development, Design and Simple use</p>
+                    <p>Gravit is a fast and light operating system, he is made for all the platforms, smartphone, computer, laptot, microcomputer, etcetera... He is based on a modified version of Ubuntu, to optimize to work on 128 Mb of RAM, for the graphical interface we use electron and nodejs at background. All the applications are made with HTML, CSS and Javascript. The Android applications  can work After all Gravit aims at creating an ecosystem enter quite typical of appareils.t aims of created at a écosystem enter quite typical of device.</p>
+                    <a class="waves-effect btn" onclick="Materialize.toast('COMMING SOON !', 4000)">DOWNLOAD</a>
+                </div>
+                <div class="col s5 pull-s7">
+                    <img src="assets/img/gravit-icon.png" alt="logo">
+                </div>
+            </div>
+            <a href="#" class="arrow-down"><img src="assets/img/arrow-w.svg" alt=""></a>
+        </div>
+        <div class="section sectiontwo">
+
+            <div class="row container atout">
+                <div class="col s4">
+                    <div class="center container atout-para">
+                        <i class="material-icons">code</i>
+                        <h6>Accelerated development</h6>
+                        <p class="light center">With the Gravity application system (Pulsar) it is easier to deploy and update these applications</p>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="center container atout-para">
+                        <i class="material-icons">autorenew</i>
+                        <h6>Quick updates</h6>
+                        <p class="light center">Thanks to the languages we use, updates can be deployed quickly. You do not even have to reboot your device !</p>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="center container atout-para">
+                        <i class="material-icons">child_friendly</i>
+                        <h6>Made for all</h6>
+                        <p class="light center">The system is designed to be usable most simply, no need to know how to use a terminal !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row powered-by">
+                <h6>POWERED BY</h6>
+                    <div class="col s4">
+                        <a href="https://www.ubuntu.com/" target="_blank"><img class="powered-by-img" src="assets/img/ubuntu.png" alt=""></a>
+                    </div>
+                    <div class="col s4">
+                        <a href="https://nodejs.org/" target="_blank"><img class="powered-by-img" src="assets/img/nodejs.svg" alt=""></a>
+                    </div>
+                    <div class="col s4">
+                        <a href="https://electronjs.org/" target="_blank"><img class="powered-by-img" src="assets/img/electron.svg" alt=""></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+<script>
+$(document).ready(function() {
+	$('#fullpage').fullpage();
+});
+
+</script>
+
 </html>
